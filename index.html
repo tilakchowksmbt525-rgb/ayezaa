@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henna Bliss | Mehndi Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Henna <span>Bliss</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Designs</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">Beautiful art, beautiful memories</p>
+            <h1>Elegance in Every <span>Henna</span> Pattern</h1>
+            <p>
+                Discover stunning mehndi designs for weddings, festivals
+                and every special moment.
+            </p>
+            <a href="#gallery" class="btn">Explore Designs</a>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative henna-inspired floral pattern">
+            <div class="mandala">
+                <div class="mandala-inner">❋</div>
+            </div>
+            <p>Traditional • Elegant • Unique</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="section-heading">
+            <p class="eyebrow">Welcome to Henna Bliss</p>
+            <h2>Art That Tells Your Story</h2>
+        </div>
+
+        <p class="about-text">
+            We create beautiful mehndi designs inspired by traditional
+            Indian patterns and modern styles. From delicate floral
+            designs to detailed bridal mehndi, every pattern is made
+            with love and creativity.
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="section-heading">
+            <p class="eyebrow">Our Collection</p>
+            <h2>Mehndi Design Gallery</h2>
+            <p>Choose your favourite style.</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="bridal">Bridal</button>
+            <button class="filter-btn" data-filter="arabic">Arabic</button>
+            <button class="filter-btn" data-filter="simple">Simple</button>
+            <button class="filter-btn" data-filter="mandala">Mandala</button>
+        </div>
+
+        <div class="design-grid">
+            <!-- Replace these sample photos with your own mehndi images -->
+            <article class="design-card" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80"
+                     alt="Bridal celebration inspiration">
+                <div class="design-info">
+                    <h3>Bridal Collection</h3>
+                    <p>Detailed designs for your special day</p>
+                    <button class="view-btn" data-title="Bridal Collection"
+                            data-description="A beautiful bridal-inspired design. Add your own bridal mehndi photo here.">
+                        View Design
+                    </button>
+                </div>
+            </article>
+
+            <article class="design-card" data-category="arabic">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80"
+                     alt="Wedding floral inspiration">
+                <div class="design-info">
+                    <h3>Arabic Style</h3>
+                    <p>Flowing patterns and floral details</p>
+                    <button class="view-btn" data-title="Arabic Style"
+                            data-description="An elegant Arabic-inspired design. Replace this image with your own henna artwork.">
+                        View Design
+                    </button>
+                </div>
+            </article>
+
+            <article class="design-card" data-category="simple">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=700&q=80"
+                     alt="Floral art inspiration">
+                <div class="design-info">
+                    <h3>Simple Mehndi</h3>
+                    <p>Minimal patterns for everyday beauty</p>
+                    <button class="view-btn" data-title="Simple Mehndi"
+                            data-description="A simple, minimal mehndi style. Use a real design photo for your portfolio.">
+                        View Design
+                    </button>
+                </div>
+            </article>
+
+            <article class="design-card" data-category="mandala">
+                <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80"
+                     alt="Decorative pattern inspiration">
+                <div class="design-info">
+                    <h3>Mandala Art</h3>
+                    <p>Beautiful circular patterns</p>
+                    <button class="view-btn" data-title="Mandala Art"
+                            data-description="A mandala-inspired pattern. Replace with a photo of your own mandala mehndi.">
+                        View Design
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking section" id="booking">
+        <div class="section-heading">
+            <p class="eyebrow">Let's create something beautiful</p>
+            <h2>Book Your Mehndi Appointment</h2>
+            <p>Fill in the details to prepare your booking message.</p>
+        </div>
+
+        <form id="bookingForm">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="customerPhone">Mobile Number</label>
+            <input type="tel" id="customerPhone" placeholder="Enter your mobile number"
+                   pattern="[0-9]{10}" title="Enter a 10-digit mobile number" required>
+
+            <label for="designType">Mehndi Design</label>
+            <select id="designType" required>
+                <option value="">Choose a design</option>
+                <option>Bridal</option>
+                <option>Arabic</option>
+                <option>Simple</option>
+                <option>Mandala</option>
+            </select>
+
+            <label for="bookingDate">Appointment Date</label>
+            <input type="date" id="bookingDate" required>
+
+            <button type="submit" class="btn">Prepare Booking</button>
+            <p id="bookingMessage" role="status"></p>
+        </form>
+    </section>
+
+    <!-- Design Preview Modal -->
+    <div class="modal" id="designModal" role="dialog"
+         aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Close preview">×</button>
+            <h2 id="modalTitle">Design Preview</h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Henna Bliss | Made with love and creativity</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
